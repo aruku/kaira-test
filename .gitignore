@@ -15,5 +15,5 @@ npm-debug.log
 yarn-error.log
 .phpunit.result.cache
 /.fleet
-/.idea
+/.idea/
 /.vscode
