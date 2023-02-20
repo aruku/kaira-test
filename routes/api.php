@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShortenerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Could have added a v1 group, yes
+Route::post('v1/short-urls', [ShortenerController::class, 'shorten']);
